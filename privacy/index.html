@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Flip Clock Privacy Policy</title>
+  <meta name="description" content="What Flip Clock collects, why, and the choices you have.">
+  <link rel="canonical" href="https://flipclock.whitehyun.com/privacy/">
+  <link rel="alternate" hreflang="en" href="https://flipclock.whitehyun.com/privacy/">
+  <link rel="alternate" hreflang="ko" href="https://flipclock.whitehyun.com/ko/privacy/">
+  <link rel="alternate" hreflang="ja" href="https://flipclock.whitehyun.com/ja/privacy/">
+  <link rel="alternate" hreflang="de" href="https://flipclock.whitehyun.com/de/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://flipclock.whitehyun.com/privacy/">
+  <script>
+    // The App Store has one privacy URL for every language, and it points here.
+    // Send readers to their own language unless they picked English (?lang=en).
+    (function () {
+      if (/[?&]lang=/.test(location.search)) return;
+      var langs = navigator.languages || [navigator.language || ""];
+      for (var i = 0; i < langs.length; i++) {
+        var l = String(langs[i]).toLowerCase().slice(0, 2);
+        if (l === "en") return;
+        if (l === "ko" || l === "ja" || l === "de") {
+          location.replace("/" + l + "/privacy/" + location.hash);
+          return;
+        }
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/privacy.css">
+</head>
+<body>
+  <main>
+    <nav class="top" aria-label="Language">
+      <a href="/">Flip Clock</a>
+      <ul>
+        <li><a href="/privacy/?lang=en" lang="en" aria-current="page">English</a></li>
+        <li><a href="/ko/privacy/" lang="ko" hreflang="ko">한국어</a></li>
+        <li><a href="/ja/privacy/" lang="ja" hreflang="ja">日本語</a></li>
+        <li><a href="/de/privacy/" lang="de" hreflang="de">Deutsch</a></li>
+      </ul>
+    </nav>
+
+    <h1>Flip Clock Privacy Policy</h1>
+    <p class="effective">Effective: November 13, 2026</p>
+
+    <p>SeungHyun Hong (“the developer”) makes Flip Clock (“the app”). This policy explains what the app collects and why.</p>
+
+    <h2 id="summary">Summary</h2>
+    <ul>
+      <li>There is no account. The app never asks for or collects your name, phone number, contacts, photos or precise location. It gets your email address only if you type it into <strong>Settings › Send Feedback</strong> to get a reply.</li>
+      <li>What you send with <strong>Settings › Send Feedback</strong> goes to the developer. The form shows the device info it would send along, word for word, and you can turn it off.</li>
+      <li>Your clock settings, D-day titles and dates, and focus timer history stay on your device and are never sent to the developer.</li>
+      <li>If you use the <strong>Weather</strong> theme on <strong>Live</strong>, the app asks for your approximate location to get the current weather from Apple. Picking a city instead needs no location permission. See <a href="#weather">Weather and location</a>.</li>
+      <li>The app collects usage statistics with <strong>Amplitude</strong> to improve the app, without your IP address or location. Turn off <strong>Settings › Privacy › Share Usage Data</strong> to stop it.</li>
+      <li>People who first install the app from version 1.2.0 on and don’t own Flip Clock Pro see one ad at the bottom of Settings, served by <strong>Google AdMob</strong>. Personalized ads are off, and the app never asks to track you or reads your advertising identifier (IDFA).</li>
+      <li>Purchases are handled by Apple. The developer never receives your payment details.</li>
+    </ul>
+
+    <h2 id="collected">What is collected, and why</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Data</th><th scope="col">Purpose</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Usage statistics (Amplitude)</th><td>How the app is used (installs, updates and opens, screens viewed, themes previewed and chosen, focus timers started and finished, how many D-days you have), app settings (theme, style, clock format), whether you own Pro and your purchase (product, price, currency), a random device ID made by the app, device model, OS and app version, and language</td><td>Learning which features are used to improve the app, and finding problems in the app and the purchase flow</td></tr>
+          <tr><th scope="row">Weather (Apple WeatherKit and Apple Maps)</th><td>Your approximate location while the Weather theme is on Live, or the city you search for and its location</td><td>Showing the current weather and working out the sun’s position on the Weather board</td></tr>
+          <tr><th scope="row">Ads (Google AdMob)</th><td>Ad impressions and taps, device information, approximate location inferred from your IP address (and, while location access is on, your approximate location), and diagnostics from the ads SDK</td><td>Showing ads, limiting how often an ad repeats, preventing ad fraud, and measuring ad performance</td></tr>
+          <tr><th scope="row">Send Feedback</th><td>The kind of feedback (idea, bug or other) and your message, your email address if you add one, and, with Include Device Info on, the app version and build, OS version, device model, language and region, clock theme, and whether you own Pro</td><td>Reading your feedback, fixing problems, and replying if you asked</td></tr>
+          <tr><th scope="row">Support</th><td>Your email address and message</td><td>Answering you</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>What you type, such as D-day titles and dates, is never included; only the number of D-days is.</li>
+      <li>The advertising identifier (IDFA) and the identifier for vendor (IDFV) are not collected.</li>
+      <li>Usage statistics carry no IP address, carrier or location.</li>
+      <li>When you send feedback, your IP address is used only for a moment, to stop too many messages from one place, and is not stored.</li>
+    </ul>
+
+    <section class="weather" aria-labelledby="weather">
+      <h3 id="weather">Weather and location</h3>
+      <p>If you use the Weather theme on Live, Flip Clock asks for your approximate location. It’s used on your device to work out the sun’s position, and sent to Apple’s WeatherKit service to get the current weather. If you pick a city instead, the city you search for is looked up with Apple Maps, and its location is sent to WeatherKit; no location permission is needed. Flip Clock keeps only a rounded location (about 5 km), your saved cities and the last weather on your device, and deletes the rounded location and its weather if you turn off location access. While location access is on, the Google Mobile Ads SDK that shows the ad in Settings may also use your approximate location to choose an ad. Ads in Flip Clock aren’t personalized, and Pro has no ads. Weather data is provided by Apple Weather.</p>
+    </section>
+
+    <h2 id="retention">How long it is kept</h2>
+    <ul>
+      <li>Usage statistics are deleted automatically after Amplitude’s one-year retention period. Aggregated statistics that can’t identify anyone, such as daily user counts, may be kept longer.</li>
+      <li>The rounded location, saved cities and last weather stay on your device. The rounded location and its weather are deleted when you turn off location access, and everything is deleted with the app. Weather requests are handled by Apple under Apple’s privacy policy.</li>
+      <li>Ad data is kept by Google under Google’s privacy policy.</li>
+      <li>Feedback is kept while it helps improve the app and deleted two years after it was sent; an email address you added is removed once you’ve had a reply. Ask, and it’s deleted sooner.</li>
+      <li>Support emails are deleted once your question is resolved.</li>
+    </ul>
+
+    <h2 id="processors">Who processes it, and international transfers</h2>
+    <p>Usage statistics are processed by Amplitude, Inc. and stored in the United States. Weather requests and city searches go to Apple Inc. (WeatherKit and Apple Maps). Ad data is processed by Google LLC and may be stored in the United States and other countries where Google operates. Feedback passes through Cloudflare, Inc., in the Cloudflare data center nearest you, without being stored there, and is kept in the developer’s channel on Discord (Discord Inc., United States). These companies protect such transfers with safeguards such as the European Commission’s Standard Contractual Clauses. See <a href="https://amplitude.com/privacy">Amplitude’s privacy notice</a>, <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>, <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a> and <a href="https://discord.com/privacy">Discord’s privacy policy</a>. The developer doesn’t sell your data or share it with anyone else.</p>
+    <p>Legal bases (EEA, UK and Switzerland): usage statistics rely on the developer’s legitimate interest in improving the app, and you can object at any time with the Share Usage Data switch. Your location for the Weather theme relies on your consent, given in the location permission prompt; a city you search for is used to provide the weather you asked for. Ads rely on your consent, which Google’s consent form asks for before the first ad; you can change it later in <strong>Settings › Privacy › Ad Privacy Choices</strong>. Feedback relies on your consent, given when you press Send.</p>
+
+    <h2 id="choices">Your choices and rights</h2>
+    <ul>
+      <li>Turn off <strong>Settings › Privacy › Share Usage Data</strong> to stop usage statistics. Turning it back on starts over with a new device ID, and deleting the app deletes the ID.</li>
+      <li>Turn off location access for Flip Clock in the iPhone or iPad Settings app (Privacy &amp; Security › Location Services), or pick a city for the Weather theme instead. The rest of the app works without it.</li>
+      <li>Buying Flip Clock Pro removes the ad, and with it the ad data collection.</li>
+      <li>You can ask to access, correct or delete your data, or to stop its processing, by emailing the address below. Because there is no account, the developer may not be able to find data tied to you; turning off Share Usage Data and deleting the app stops further collection.</li>
+    </ul>
+
+    <h2 id="children">Children</h2>
+    <p>The app is a clock for all ages. It doesn’t knowingly collect information about children, requests only ads rated suitable for all ages, and doesn’t use personalized ads.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>SeungHyun Hong, <a href="mailto:whi7ehyun@gmail.com">whi7ehyun@gmail.com</a></p>
+
+    <h2 id="changes">Changes</h2>
+    <p>The developer will update this page and its effective date when the app’s data practices change. This version adds the Weather theme. The previous policy applied from October 30 to November 12, 2026 (Send Feedback), the one before it from October 27 to October 29, 2026 (usage statistics and ads), and the one before that from July 8, 2022, when the app collected no data.</p>
+
+    <footer><a href="/">Flip Clock</a></footer>
+  </main>
+</body>
+</html>
